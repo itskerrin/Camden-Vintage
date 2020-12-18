@@ -18,6 +18,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
 
+    <!-- Google Map -->
+    
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+    defer></script>
+
     <link rel="stylesheet" href="/styles.css" />
     <title>Camden Vintage</title>
   </head>
@@ -47,23 +53,23 @@
 
             <ul class="nav-list">
               <li class="nav-item">
-                <a href="#home" class="nav-link scroll-link">Home</a>
+                <a href="./index.html" class="nav-link scroll-link">Home</a>
               </li>
 
               <li class="nav-item">
-                <a href="#about" class="nav-link scroll-link">About Us</a>
+                <a href="./about.html" class="nav-link scroll-link">About Us</a>
               </li>
 
               <li class="nav-item">
-                <a href="#products" class="nav-link scroll-link">Products</a>
+                <a href="./products.html" class="nav-link scroll-link">Products</a>
               </li>
 
               <li class="nav-item">
-                <a href="#visit" class="nav-link scroll-link">Visit Us</a>
+                <a href="./visit.html" class="nav-link scroll-link">Visit Us</a>
               </li>
 
               <li class="nav-item">
-                <a href="#contact" class="nav-link scroll-link">Contact</a>
+                <a href="./contact.html" class="nav-link scroll-link">Contact</a>
               </li>
             </ul>
           </div>
@@ -77,18 +83,41 @@
 
     <!-- Main -->
     <main>
-      <div class="about-main">
-        <h1 class="about-us">About Us...</h1>
-        <div class="about-main-img"><img src="/shopimages/horsesresize.jpg" alt="Metal horse statues">
-        </div>
-        <div>
-          <p>Welcome to Camden Vintage, the home of hand sourced vintage pieces, based in the heart of Camden town. 
-            We are a small, family run business who started in Camden market almost 15 years ago. 
-            Over this time we have built up a strong connection with the community, gained experience in sourcing unique pieces and collaborated with some of the leading stylists for film, TV and music. 
-            You can see our items in productions from the BBC, ITV, Netflix and many more! We are open every day of the week and welcome all to visit our store. 
-            We look forward to seeing you!</p>
-            <h2 class="signature"> - The Camden Vintage team</h1>
-        </div>
+      <div class="visit-main">
+<!-- Map -->
+
+<div class='visit-us-wrapper'>
+  <div class='row'>
+    <div class='column' id="form-column">
+      <section id="contact">
+      <form>
+        <input type="text" placeholder="Name" />
+        <input type="email" placeholder="Email address" />
+        <textarea placeholder="Your message ..."></textarea>
+        <button class="button">Send</button>
+      </form>
+      </section>
+    </div>
+    <div class='column' id="info-column">
+      <div class='info-column'>
+        <h1 class="visit-us">Get in touch</h1>
+        <ul>
+          <li class="li-bold">Opening times</li>
+          <li>Monday: 10 - 6</li>
+          <li>Tuesday: 10 - 6</li>
+          <li>Wednesday: 10 - 6</li>
+          <li>Thursday: 10 - 6</li>
+          <li>Friday: 10 - 6</li>
+          <li>Saturday: 10 - 6</li>
+          <li>Sunday: 10 - 4</li>
+        </ul>
+        <p class="visit-location">We are located in the horse tunnel section of the Stables market, part of the famous Camden Market.
+          Find us directly between Chalk Farm and Camden Town train stations. We look forward to meeting you.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
       </div>
     </main>
 
@@ -132,6 +161,5 @@
   </footer>
   </body>
 
-  <script src="script.js"></script>
+  <script src="/script.js"></script>
 </html>
-
