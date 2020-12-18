@@ -304,7 +304,6 @@ h1 {
 /* Hero Image */
 
 .hero {
-  min-height: 100vh;
   background: linear-gradient(
       to right bottom,
       rgba(255, 255, 255, 0.534),
@@ -317,6 +316,138 @@ h1 {
 }
 
 /* Main text */
+
+h1.about-us {
+  font-family: 'Notera Thin', sans-serif;
+  text-align: center;
+  font-size: 4.5rem;
+  font-weight: 300;
+  padding: 3%;
+}
+
+.about-main-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0% 10% 0%;
+}
+
+.about-main p {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 5% 9% 0%;
+}
+
+h1.products {
+  font-family: 'Notera Thin', sans-serif;
+  text-align: center;
+  font-size: 4.5rem;
+  font-weight: 300;
+  padding: 3%;
+}
+
+.products-main-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0% 10% 0%;
+}
+
+.products-main p {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 3% 9% 6%;
+}
+
+h2.signature {
+  font-family: 'Notera Thin', sans-serif;
+  text-align: center;
+  font-size: 4.5rem;
+  font-weight: 300;
+  padding: 2% 9% 5%;
+}
+
+/* Map */
+
+h1.visit-us {
+  font-weight: 200;
+  padding: 0% 0% 3%;
+}
+
+.visit-us-wrapper {
+  padding: 9%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+#map-column {
+  flex-grow: 2;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+#info-column {
+  padding: 0% 5% 0%;
+}
+
+li.li-bold {
+  font-weight: 900;
+  padding: 0% 0% 3%;
+}
+
+p.visit-location {
+  padding: 7% 0% 0%;
+}
+
+/* Form */
+
+::placeholder {
+  font-family: 'Notera Thin', sans-serif;
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+#contact {
+  padding: 2% 9% 9%;
+}
+
+#contact form {
+  width: 100%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+#contact input,
+#contact textarea {
+  width: 100%;
+  margin: 1% 0;
+  padding: 5% 3% 5%;
+}
+
+.button {
+  margin-top: 10px;
+  width: 30%;
+  font-family: 'Raleway', sans-serif;
+  float: right;
+}
 
 /* Footer */
 .footer {

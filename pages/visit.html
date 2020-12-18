@@ -18,7 +18,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
 
-    <link rel="stylesheet" href="styles.css" />
+    <!-- Google Map -->
+    
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+    defer></script>
+
+    <link rel="stylesheet" href="/styles.css" />
     <title>Camden Vintage</title>
   </head>
 
@@ -47,11 +53,11 @@
 
             <ul class="nav-list">
               <li class="nav-item">
-                <a href="index.html" class="nav-link scroll-link">Home</a>
+                <a href="#home" class="nav-link scroll-link">Home</a>
               </li>
 
               <li class="nav-item">
-                <a href="./pages/about.html" class="nav-link scroll-link">About Us</a>
+                <a href="#about" class="nav-link scroll-link">About Us</a>
               </li>
 
               <li class="nav-item">
@@ -77,7 +83,34 @@
 
     <!-- Main -->
     <main>
-      <div class="hero">
+      <div class="visit-main">
+<!-- Map -->
+
+<div class='visit-us-wrapper'>
+  <div class='row'>
+    <div class='column' id="map-column">
+    <div id="map"></div>
+    </div>
+    <div class='column' id="info-column">
+      <div class='info-column'>
+        <h1 class="visit-us">Visit Us...</h1>
+        <ul>
+          <li class="li-bold">Opening times</li>
+          <li>Monday: 10 - 6</li>
+          <li>Tuesday: 10 - 6</li>
+          <li>Wednesday: 10 - 6</li>
+          <li>Thursday: 10 - 6</li>
+          <li>Friday: 10 - 6</li>
+          <li>Saturday: 10 - 6</li>
+          <li>Sunday: 10 - 4</li>
+        </ul>
+        <p class="visit-location">We are located in the horse tunnel section of the Stables market, part of the famous Camden Market.
+          Find us directly between Chalk Farm and Camden Town train stations. We look forward to meeting you.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
       </div>
     </main>
 
@@ -121,5 +154,5 @@
   </footer>
   </body>
 
-  <script src="script.js"></script>
+  <script src="/script.js"></script>
 </html>

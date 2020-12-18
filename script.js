@@ -34,3 +34,17 @@ window.addEventListener('scroll', () => {
     navBar.classList.remove('fix-nav');
   }
 });
+
+// Map
+
+function initMap() {
+  const camden = { lat: 51.54153134790268, lng: -0.1476041523088159 };
+  const map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 4,
+    center: camden,
+  });
+  const marker = new google.maps.Marker({
+    position: camden,
+    map: map,
+  });
+}
